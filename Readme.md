@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Artem](https://up.htmlacademy.ru/htmlcss-individual/2/user/2312385).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктория Никитина](https://github.com/vikitina).
 
 ---
 
