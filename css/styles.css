@@ -96,6 +96,7 @@ body {
 }
 
 .advantages-heading, .additional-heading {
+  margin: 0;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -103,6 +104,7 @@ body {
 }
 
 .advantages-text, .additional-text {
+  margin: 0;
   font-size: 22px;
   line-height: 26px;
 }
@@ -114,15 +116,33 @@ body {
 }
 
 .advantages-title, .additional-title {
+  margin: 0;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+}
+
+.advantages-item:nth-child(2n) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item:nth-child(2n + 1) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-item:first-child, .advantages-item:last-child {
+  color: #ffffff;
+  background-color: #82B3D3;
 }
 
 .additional-item {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 75px 72px;
+}
+
+.additional-item:nth-child(2n + 1) {
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .additional-item-home {
@@ -142,6 +162,7 @@ body {
 }
 
 .search-title {
+  margin: 0;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -149,6 +170,7 @@ body {
 }
 
 .search-text {
+  margin: 0;
   font-size: 22px;
   line-height: 26px;
 }
@@ -171,6 +193,7 @@ body {
 }
 
 .subscribe-title {
+  margin: 0;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -178,6 +201,7 @@ body {
 }
 
 .subscribe-text {
+  margin: 0;
   font-size: 22px;
   line-height: 26px;
 }
