@@ -25,8 +25,16 @@
   overflow: hidden;
 }
 
+html {
+  height: 100%;
+}
+
 body {
-  margin: 0;
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -43,11 +51,35 @@ body {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  border-radius: 4px;
+}
+
+.header {
+  margin: 0 auto;
+  width: 1060px;
+  display: flex;
+}
+
+.logo-link {
+  display: block;
+  margin-right: 28px;
+  margin-bottom: -10px;
+  z-index: 1;
+}
+
+.page-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
 }
 
 .nav-list {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 450px;
   list-style: none;
   font-size: 20px;
   line-height: 24px;
@@ -57,11 +89,17 @@ body {
 .nav-link {
   text-decoration: none;
   color: #000000;
+  padding: 20px 16px;
 }
 
 .user-menu-list {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  width: 312px;
   list-style: none;
   font-size: 16px;
   line-height: 20px;
@@ -69,8 +107,21 @@ body {
 }
 
 .user-menu-link {
+  padding: 22px 12px;
   text-decoration: none;
   color: #ffffff;
+}
+
+.favorit-number {
+  background-color: #7db54f;
+}
+
+.user-menu-button {
+  padding: 8px 34px;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .welcome {
@@ -122,6 +173,11 @@ body {
   text-transform: uppercase;
 }
 
+.advantages-list {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+}
+
 .advantages-item:nth-child(2n) {
   background-color: rgba(131, 179, 211, 0.12);
 }
@@ -133,6 +189,25 @@ body {
 .advantages-item:first-child, .advantages-item:last-child {
   color: #ffffff;
   background-color: #82B3D3;
+  grid-column: -1 / 1;
+  display: grid;
+}
+
+.advantages-item:first-child {
+  grid-template-columns: 400px 1fr;
+}
+
+.advantages-item:last-child {
+  grid-template-columns: 1fr 400px;
+}
+
+.advantages-item:last-child .advantages-container {
+  order: 1;
+}
+
+.additional-list {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
 }
 
 .additional-item {
@@ -219,6 +294,11 @@ body {
 }
 
 .social {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  align-items: center;
+  width: 1060px;
   font-size: 40px;
   line-height: 40px;
 }
@@ -226,9 +306,15 @@ body {
 .social-list {
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .social-phone {
   color: #000000;
   text-decoration: none;
+}
+
+.social-link {
+  margin-left: auto;
 }
