@@ -186,22 +186,22 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-item:first-child, .advantages-item:last-child {
+.advantages-item.advantages-photo {
   color: #ffffff;
   background-color: #82B3D3;
   grid-column: -1 / 1;
   display: grid;
 }
 
-.advantages-item:first-child {
+.advantages-photo.photo-left {
   grid-template-columns: 400px 1fr;
 }
 
-.advantages-item:last-child {
+.advantages-photo.photo-right {
   grid-template-columns: 1fr 400px;
 }
 
-.advantages-item:last-child .advantages-container {
+.advantages-photo.photo-right .advantages-container {
   order: 1;
 }
 
@@ -317,4 +317,99 @@ body {
 
 .social-link {
   margin-left: auto;
+}
+
+.filter-container {
+  background-image: url("../images/bg-filter.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-color: #9f9191;
+}
+
+.catalog-title {
+  margin: 0;
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.breadcrumbs-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.breadcrumbs-link {
+  color:#ffffff;
+  text-decoration: none;
+}
+
+.filter-group {
+  padding: 0;
+  border: none;
+  color: #ffffff;
+}
+
+.filter-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.filter-list {
+  margin: 0;
+  padding: 0;
+  line-height: 23px;
+}
+
+.hotel-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hotels-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.hotel-link-text {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000000;
+}
+
+.rating {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.pagination-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+
+  color: #ffffff;
+}
+
+.pagination-link {
+  background-color: #82B3D3;
+  text-decoration: none;
+}
+
+.pagination-item:first-child .pagination-link,
+.pagination-item:last-child .pagination-link {
+  background-color: #f2f2f2;
 }
