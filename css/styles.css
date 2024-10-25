@@ -142,11 +142,17 @@ body {
   padding: 51px 0 82px;
 }
 
-.advantages, .additional {
+.advantages-container {
+  padding: 69px 240px 90px;
+}
+
+.advantages,
+.additional {
   text-align: center;
 }
 
-.advantages-heading, .additional-heading {
+.advantages-heading,
+.additional-heading {
   margin: 0;
   font-size: 30px;
   line-height: 36px;
@@ -154,28 +160,64 @@ body {
   text-transform: uppercase;
 }
 
-.advantages-text, .additional-text {
+.advantages-heading {
+  margin-bottom: 25px;
+}
+
+.additional-heading {
+  margin-bottom: 20px;
+}
+
+.advantages-text,
+.additional-text {
   margin: 0;
   font-size: 22px;
   line-height: 26px;
 }
 
-.advantages-list, .additional-list {
+.additional-container {
+  padding: 64px 342px;
+}
+
+.advantages-description,
+.additional-description {
+  margin: 0;
+}
+
+.advantages-list,
+.additional-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.advantages-title, .additional-title {
+.advantages-title,
+.additional-title {
   margin: 0;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
 }
 
+.advantages-title {
+  margin-bottom: 62px;
+}
+
+.additional-title {
+  margin-bottom: 30px;
+}
+
 .advantages-list {
   display: grid;
   grid-template-columns: repeat(3, 400px);
+}
+
+.advantages-item-container {
+  padding: 112px 85px;
+}
+
+.advantages-photo .advantages-item-container {
+  padding: 102px 82px;
 }
 
 .advantages-item:nth-child(2n) {
@@ -201,7 +243,7 @@ body {
   grid-template-columns: 1fr 400px;
 }
 
-.advantages-photo.photo-right .advantages-container {
+.advantages-photo.photo-right .advantages-item-container {
   order: 1;
 }
 
@@ -211,8 +253,9 @@ body {
 }
 
 .additional-item {
+  padding: 183px 85px 81px;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 50% 26%;
   background-size: 75px 72px;
 }
 
@@ -234,10 +277,12 @@ body {
 
 .search {
   text-align: center;
+  padding: 96px 300px 104px;
 }
 
 .search-title {
   margin: 0;
+  margin-bottom: 20px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -246,6 +291,7 @@ body {
 
 .search-text {
   margin: 0;
+  margin-bottom: 62px;
   font-size: 22px;
   line-height: 26px;
 }
@@ -255,10 +301,11 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 8px 50px;
+  padding: 12px 50px;
 }
 
 .subscribe {
+  padding: 97px 258px 104px;
   text-align: center;
   background-image: url("../images/bg-subscribe.jpg");
   background-repeat: no-repeat;
@@ -269,6 +316,7 @@ body {
 
 .subscribe-title {
   margin: 0;
+  margin-bottom: 20px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -277,24 +325,35 @@ body {
 
 .subscribe-text {
   margin: 0;
+  margin-bottom: 55px;
   font-size: 22px;
   line-height: 26px;
 }
 
+.subscribe-form {
+  display: grid;
+  grid-template-columns: 1fr 232px;
+}
+
 .subscribe-field {
+  padding: 14px 20px;
   font-size: 18px;
   line-height: 24px;
+  border: none;
+  border-radius: 4px 0 0 4px;
 }
 
 .subscribe-button {
   font-size: 20px;
   line-height: 36px;
   border: none;
+  border-radius: 0 4px 4px 0;
   background-color: #82B3D3;
 }
 
 .social {
   margin: 0 auto;
+  padding: 40px 0 30px;
   display: grid;
   grid-template-columns: 1fr max-content 1fr;
   align-items: center;
@@ -308,6 +367,7 @@ body {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
+  list-style: none;
 }
 
 .social-phone {
