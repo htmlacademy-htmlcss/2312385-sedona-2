@@ -114,7 +114,7 @@
                   </div>
                 </fieldset>
                 <div class="slider">
-                  <div class="slider-price" style="left: 55px; right: 34px;">
+                  <div class="slider-price" style="left: 0; right: 34px;">
                     <button class="slider-toggle slider-min" type="button">
                       <span class="visually-hidden">Изменить минимальную цену</span>
                     </button>
@@ -172,10 +172,12 @@
                 <img class="hotel-pic" src="./images/hotel/hotel-1.jpg" alt="Вид на звёзды из пещеры" width="300"
                   height="212">
               </a>
-              <span class="hotel-description">Гостиница</span>
-              <span class="hotel-description">От 4000 ₽</span>
+              <div class="hotel-description">
+                <span class="description-text">Гостиница</span>
+                <span class="description-text">От 4000 ₽</span>
+              </div>
               <a class="button button-more" href="#">Подробнее</a>
-              <button class="button button-secondary" type="button">В избранное</button>
+              <button class="button button-favorit button-secondary" type="button">В избранное</button>
               <p class="stars stars-four">
                 <span class="visually-hidden">4 звезды</span>
               </p>
@@ -189,8 +191,10 @@
                 <img class="hotel-pic" src="./images/hotel/hotel-2.jpg" alt="Вид на горы с радугой" width="300"
                   height="212">
               </a>
-              <span class="hotel-description">Гостиница</span>
-              <span class="hotel-description">От 5000 ₽</span>
+              <div class="hotel-description">
+                <span class="description-text">Гостиница</span>
+                <span class="description-text">От 5000 ₽</span>
+              </div>
               <a class="button button-more" href="#">Подробнее</a>
               <button class="button button-secondary button-favorit" type="button">В избранном</button>
               <p class="stars stars-four">
@@ -206,10 +210,12 @@
                 <img class="hotel-pic" src="./images/hotel/hotel-3.jpg" alt="вид на горы, ракурс у подножья" width="300"
                   height="212">
               </a>
-              <span class="hotel-description">Гостиница</span>
-              <span class="hotel-description">От 2500 ₽</span>
+              <div class="hotel-description">
+                <span class="description-text">Гостиница</span>
+                <span class="description-text">От 2500 ₽</span>
+              </div>
               <a class="button button-more" href="#">Подробнее</a>
-              <button class="button button-secondary" type="button">В избранное</button>
+              <button class="button button-secondary button-favorit" type="button">В избранное</button>
               <p class="stars stars-three">
                 <span class="visually-hidden">3 звезды</span>
               </p>
@@ -223,10 +229,12 @@
                 <img class="hotel-pic" src="./images/hotel/hotel-4.jpg" alt="Вид на горы на закате" width="300"
                   height="212">
               </a>
-              <span class="hotel-description">Гостиница</span>
-              <span class="hotel-description">От 1500 ₽</span>
+              <div class="hotel-description">
+                <span class="description-text">Гостиница</span>
+                <span class="description-text">От 1500 ₽</span>
+              </div>
               <a class="button button-more" href="#">Подробнее</a>
-              <button class="button button-secondary" type="button">В избранное</button>
+              <button class="button button-secondary button-favorit" type="button">В избранное</button>
               <p class="stars stars-two">
                 <span class="visually-hidden">2 звезды</span>
               </p>
@@ -238,34 +246,22 @@
           <h3 class="visually-hidden">Список страниц</h3>
           <ul class="pagination-list">
             <li class="pagination-item">
-              <a class="pagination-link" href="#">
-                <span class="pagination-text">1</span>
-              </a>
+              <a class="pagination-link" href="#">1</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">
-                <span class="pagination-text">2</span>
-              </a>
+              <a class="pagination-link" href="#">2</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">
-                <span class="pagination-text">3</span>
-              </a>
+              <a class="pagination-link" href="#">3</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">
-                <span class="pagination-text">4</span>
-              </a>
+              <a class="pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link">
-                <span class="pagination-text">...</span>
-              </a>
+              <a class="pagination-link">...</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">
-                <span class="pagination-text">10</span>
-              </a>
+              <a class="pagination-link" href="#">10</a>
             </li>
           </ul>
         </section>
@@ -274,7 +270,7 @@
       <footer class="page-footer">
         <section class="subscribe">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-          <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="subscribe-text">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="subscribe-form" action="#" method="post">
             <input class="subscribe-field" type="email" name="user-email" placeholder="Ваш e-mail" required>
             <button class="button subscribe-button button-secondary" type="submit">Подписаться</button>
