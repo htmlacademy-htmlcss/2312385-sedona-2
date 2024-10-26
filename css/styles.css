@@ -438,6 +438,7 @@ body {
 
 .filter-form {
   display: flex;
+  column-gap: 60px;
 }
 
 .filter-group {
@@ -448,12 +449,8 @@ body {
   color: #ffffff;
 }
 
-.filter-group + .filter-group {
-  margin-left: 60px;
-}
-
 .price-container {
-  margin: 0 70px 0 auto;
+  margin: 0 10px 0 auto;
 }
 
 .filter-group-price {
@@ -554,7 +551,7 @@ body {
 
 .hotels-container {
   margin: 0 auto;
-  padding: 58px 0 60px;
+  padding: 50px 0 60px;
   width: 1060px;
 }
 
@@ -563,6 +560,33 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.view-container {
+  display: flex;
+  align-items: center;
+}
+
+.hotels-select {
+  margin-left: auto;
+  padding: 14px;
+  width: 292px;
+}
+
+.view-list {
+  margin: 0;
+  padding: 0;
+  margin-left: 70px;
+  display: flex;
+  column-gap: 8px;
+  list-style: none;
+}
+
+.view-link {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border: 2px solid #000000;
 }
 
 .hotel-list {
