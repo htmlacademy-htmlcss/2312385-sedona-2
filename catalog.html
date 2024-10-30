@@ -67,16 +67,25 @@
                 <legend class="filter-title">Инфраструктура:</legend>
                 <ul class="filter-list">
                   <li class="filter-item">
-                    <input type="checkbox" name="pool" class="filter-input" id="pool" checked>
-                    <label class="filter-text" for="pool">Бассейн</label>
+                    <label class="filter-label">
+                      <input type="checkbox" name="pool" class="visually-hidden filter-input" checked>
+                      <span class="filter-mark"></span>
+                      <span class="filter-text">Бассейн</span>
+                    </label>
                   </li>
                   <li class="filter-item">
-                    <input type="checkbox" name="parking" class="filter-input" id="parking" checked>
-                    <label class="filter-text" for="parking">Парковка</label>
+                    <label class="filter-label">
+                      <input type="checkbox" name="parking" class="visually-hidden filter-input" checked>
+                      <span class="filter-mark"></span>
+                      <span class="filter-text">Парковка</span>
+                    </label>
                   </li>
                   <li class="filter-item">
-                    <input type="checkbox" name="wi-fi" class="filter-input" id="wifi">
-                    <label class="filter-text" for="wifi">wi-fi</label>
+                    <label class="filter-label">
+                      <input type="checkbox" name="wi-fi" class="visually-hidden filter-input">
+                      <span class="filter-mark"></span>
+                      <span class="filter-text">wi-fi</span>
+                    </label>
                   </li>
                 </ul>
               </fieldset>
@@ -84,16 +93,25 @@
                 <legend class="filter-title">Тип Жилья:</legend>
                 <ul class="filter-list">
                   <li class="filter-item">
-                    <input type="radio" name="type" class="filter-input" value="hotel" id="hotel" checked>
-                    <label class="filter-text" for="hotel">Гостиница</label>
+                    <label class="filter-label">
+                      <input type="radio" name="type" class="visually-hidden filter-input" value="hotel" id="hotel" checked>
+                      <span class="filter-mark"></span>
+                      <span class="filter-text">Гостиница</span>
+                    </label>
                   </li>
                   <li class="filter-item">
-                    <input type="radio" name="type" class="filter-input" value="motel" id="motel">
-                    <label class="filter-text" for="motel">Мотель</label>
+                    <label class="filter-label">
+                      <input type="radio" name="type" class="visually-hidden filter-input" value="motel" id="motel">
+                      <span class="filter-mark"></span>
+                      <span class="filter-text">Мотель</span>
+                    </label>
                   </li>
                   <li class="filter-item">
-                    <input type="radio" name="type" class="filter-input" value="Apartments" id="Apartments">
-                    <label class="filter-text" for="Apartments">Апартаменты</label>
+                    <label class="filter-label" for="Apartments">
+                      <input type="radio" name="type" class="visually-hidden filter-input" value="Apartments" id="Apartments">
+                      <span class="filter-mark"></span>
+                      <span class="filter-text">Апартаменты</span>
+                    </label>
                   </li>
                 </ul>
               </fieldset>
@@ -103,13 +121,11 @@
                   <div class="filter-input-container">
                     <label class="filter-label">
                       <span class="filter-range" hidden>от</span>
-                      <input type="number" name="price-min" class="filter-price price-min" value="0" placeholder="0"
-                        min="0" max="10000" step="50">
+                      <input type="number" name="price-min" class="filter-price price-min" value="0" placeholder="0" min="0" max="10000" step="50">
                     </label>
                     <label class="filter-label">
                       <span class="filter-range" hidden>до</span>
-                      <input type="number" name="price-max" class="filter-price price-max" value="9000"
-                        placeholder="9000" min="0" max="10000" step="50">
+                      <input type="number" name="price-max" class="filter-price price-max" value="9000" placeholder="9000" min="0" max="10000" step="50">
                     </label>
                   </div>
                 </fieldset>
