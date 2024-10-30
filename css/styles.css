@@ -420,7 +420,7 @@ body {
 }
 
 .filter-container {
-  padding: 35px 70px 58px;
+  padding: 35px 70px 57px;
   background-color: #9f9191;
   background-image: url("../images/bg-filter.png");
   background-repeat: no-repeat;
@@ -448,13 +448,33 @@ body {
 .breadcrumbs-list {
   margin: 0;
   padding: 0;
+  margin-left: -4px;
+  display: flex;
   list-style: none;
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
 }
 
+.breadcrumbs-item + .breadcrumbs-item {
+  position: relative;
+  margin-left: 21px;
+}
+
+.breadcrumbs-item + .breadcrumbs-item::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 11px;
+  top: 6px;
+  left: -14px;
+  background-image: url("../images/icons/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 7px 11px;
+}
+
 .breadcrumbs-link {
+  padding: 0 4px;
   color:#ffffff;
   text-decoration: none;
 }
@@ -482,7 +502,7 @@ body {
 }
 
 .filter-title {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -596,7 +616,7 @@ body {
 }
 
 .filter-buttons {
-  margin-top: 54px;
+  margin-top: 57px;
   width: 191px;
 }
 
@@ -606,7 +626,7 @@ body {
 }
 
 .button-apply {
-  margin-bottom: 34px;
+  margin-bottom: 32px;
 }
 
 .button-reset {
@@ -620,7 +640,7 @@ body {
 }
 
 .hotels-title {
-  margin-top: 9px;
+  margin-top: 7px;
   width: 350px;
   font-size: 30px;
   line-height: 36px;
@@ -731,6 +751,10 @@ body {
   grid-area: favorit;
   padding: 8px;
   align-self: baseline;
+}
+
+.button-favorit-active {
+  background-color: #7db54f;
 }
 
 .stars {
