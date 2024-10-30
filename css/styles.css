@@ -124,12 +124,13 @@ body {
 
 .user-menu-list {
   margin: 0;
-  margin-top: 14px;
+  margin-top: 12px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
+  gap: 4px;
   width: 312px;
   list-style: none;
   font-size: 16px;
@@ -138,17 +139,35 @@ body {
 }
 
 .user-menu-link {
-  padding: 22px 12px;
+  position: relative;
+  display: block;
+  padding: 20px;
   text-decoration: none;
   color: #ffffff;
 }
 
+.user-menu-icon {
+  position: absolute;
+  top: calc(50% - 10px);
+  left: calc(50% - 10px);
+}
+
 .favorit-number {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
+  line-height: 20px;
+  text-align: center;
+  top: 0;
+  left: 19px;
   background-color: #7db54f;
+  border-radius: 50%;
 }
 
 .user-menu-button {
   padding: 8px 34px;
+  margin-left: 20px;
 }
 
 .main-container {
@@ -210,11 +229,6 @@ body {
   padding: 64px 342px;
 }
 
-.advantages-description,
-.additional-description {
-  margin: 0;
-}
-
 .advantages-list,
 .additional-list {
   margin: 0;
@@ -236,6 +250,22 @@ body {
 
 .additional-title {
   margin-bottom: 30px;
+}
+
+.advantages-description,
+.additional-description {
+  margin: 0;
+  position: relative;
+}
+
+.advantages-title + .advantages-description::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  top: -32px;
+  left: calc(50% - 30px);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .advantages-list {
@@ -264,6 +294,10 @@ body {
   background-color: #82b3d3;
   grid-column: -1 / 1;
   display: grid;
+}
+
+.advantages-photo .advantages-description::before {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .advantages-photo.photo-left {
@@ -420,7 +454,7 @@ body {
 }
 
 .filter-container {
-  padding: 35px 70px 57px;
+  padding: 35px 70px 56px;
   background-color: #9f9191;
   background-image: url("../images/bg-filter.png");
   background-repeat: no-repeat;
@@ -477,6 +511,14 @@ body {
   padding: 0 4px;
   color:#ffffff;
   text-decoration: none;
+}
+
+.breadcrumbs-pic {
+  fill: #ffffff;
+}
+
+.breadcrumbs-item:hover .breadcrumbs-pic {
+  opacity: 0.3;
 }
 
 .filter-form {
