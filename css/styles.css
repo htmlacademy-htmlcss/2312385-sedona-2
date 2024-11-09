@@ -64,7 +64,35 @@ body {
   box-sizing: border-box;
 }
 
+.button:hover {
+  background-color: #615048;
+}
+
+.button:focus:not(:active) {
+  background-color: #615048;
+  outline: none;
+}
+
+.button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button-secondary {
+  background-color: #82b3d3;
+}
+
+.button-secondary:hover {
+  background-color: #68a2ca;
+}
+
+.button-secondary:focus:not(:active) {
+  background-color: #68a2ca;
+  outline: none;
+}
+
+.button-secondary:active {
+  color: rgba(255, 255, 255, 0.3);
   background-color: #82b3d3;
 }
 
@@ -108,6 +136,14 @@ body {
   padding: 20px 16px;
 }
 
+.nav-link:hover {
+  opacity: 0.6;
+}
+
+.nav-link:active {
+  opacity: 0.3;
+}
+
 .nav-link-active {
   position: relative;
 }
@@ -144,6 +180,14 @@ body {
   padding: 20px;
   text-decoration: none;
   color: #ffffff;
+}
+
+.user-menu-link:hover {
+  opacity: 0.6;
+}
+
+.user-menu-link:active {
+  opacity: 0.3;
 }
 
 .user-menu-icon {
@@ -427,11 +471,11 @@ body {
 
 .social {
   margin: 0 auto;
-  padding: 40px 0 30px;
+  padding: 35px 0 23px;
   display: grid;
   grid-template-columns: 1fr max-content 1fr;
   align-items: center;
-  width: 1060px;
+  width: 1078px;
   font-size: 40px;
   line-height: 40px;
 }
@@ -439,6 +483,7 @@ body {
 .social-list {
   padding: 0;
   margin: 0;
+  margin-left: 9px;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -450,7 +495,56 @@ body {
 }
 
 .social-link {
+  position: relative;
   margin-left: auto;
+  padding: 20px 24px;
+  display: block;
+}
+
+.social-icon {
+  position: absolute;
+  fill: #83b3d3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.social-link:hover .social-icon {
+  fill: #68a2ca;
+}
+
+.social-link:active .social-icon {
+  fill: #68a2ca;
+  opacity: 0.3;
+}
+
+.social-phone {
+  display: block;
+  padding: 10px;
+}
+
+.social-phone:hover {
+  color: #756157;
+}
+
+.social-phone:active {
+  color: #756157;
+  opacity: 0.3;
+}
+
+.link-logo {
+  padding: 10px;
+}
+
+.link-logo:hover .social-logo {
+  fill: #756157;
+}
+
+.link-logo:active .social-logo {
+  fill: #756157;
+  opacity: 0.3;
 }
 
 .filter-container {
@@ -513,12 +607,16 @@ body {
   text-decoration: none;
 }
 
-.breadcrumbs-pic {
-  fill: #ffffff;
+.breadcrumbs-link:hover {
+  opacity: 0.6;
 }
 
-.breadcrumbs-item:hover .breadcrumbs-pic {
+.breadcrumbs-link:active {
   opacity: 0.3;
+}
+
+.breadcrumbs-pic {
+  fill: #ffffff;
 }
 
 .filter-form {
@@ -564,6 +662,18 @@ body {
 
 .filter-label {
   padding-left: 36px;
+}
+
+.filter-label:hover {
+  opacity: 0.6;
+}
+
+.filter-input:focus ~ .filter-mark {
+  outline: 2px solid #83b3d3;
+}
+
+.filter-label:active {
+  opacity: 0.3;
 }
 
 .filter-mark {
@@ -617,6 +727,14 @@ body {
   font-weight: 700;
 }
 
+.filter-price:hover {
+  background-color: #e6e6e6;
+}
+
+.filter-price:focus {
+  outline: 4px solid #83b3d3;
+}
+
 .price-min {
   border-radius: 4px 0 0 4px;
 }
@@ -649,6 +767,10 @@ body {
   cursor: pointer;
 }
 
+.slider-toggle:focus {
+  outline: 2px solid #83b3d3;
+}
+
 .slider-min {
   left: 0;
 }
@@ -673,6 +795,25 @@ body {
 
 .button-reset {
   background-color: initial;
+}
+
+.button-reset:hover {
+  background-color: initial;
+  opacity: 0.3;
+}
+
+.button-reset:focus:not(:active) {
+  background-color: initial;
+  outline: 2px solid #83b3d3;
+}
+
+.button-reset:active {
+  background-color: initial;
+  opacity: 0.6;
+}
+
+.button-reset:hover {
+  opacity: 0.3;
 }
 
 .hotels-container {
