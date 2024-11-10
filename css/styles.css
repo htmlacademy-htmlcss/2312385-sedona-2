@@ -495,12 +495,12 @@ body {
 }
 
 .field:hover {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 .field:focus {
-  outline: 3px solid #83B3D3;
-  background-color: #E6E6E6;
+  outline: 3px solid #83b3d3;
+  background-color: #e6e6e6;
 }
 
 .subscribe-field {
@@ -564,7 +564,11 @@ body {
 }
 
 .social-link:focus .social-icon {
+  outline: none;
   fill: #68a2ca;
+}
+
+.social-link:focus {
   outline: none;
 }
 
@@ -671,6 +675,11 @@ body {
 }
 
 .breadcrumbs-link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link:focus {
+  outline: none;
   opacity: 0.6;
 }
 
@@ -1019,12 +1028,6 @@ body {
   display: grid;
   width: 340px;
   grid-template-columns: 1fr 1fr;
-  /* grid-template-areas:
-    "pic pic pic"
-    "tit tit tit"
-    "des des des"
-    "more . favorit"
-    "star . rat"; */
   align-items: start;
   row-gap: 16px;
   column-gap: 20px;
@@ -1306,7 +1309,7 @@ body {
 }
 
 .modal-message-error {
-  color: #FF5757;
+  color: #ff5757;
 }
 
 .modal-field-title + .number {
@@ -1385,7 +1388,7 @@ body {
   width: 26px;
   height: 26px;
   margin-left: 10px;
-  background-color: #83B3D3;
+  background-color: #83b3d3;
   background-image: url("../images/icons/info.svg");
   background-repeat: no-repeat;
   background-size: 2px 12px;
