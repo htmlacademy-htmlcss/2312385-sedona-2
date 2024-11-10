@@ -115,6 +115,19 @@ body {
   z-index: 1;
 }
 
+.logo-link:hover {
+  opacity: 0.6;
+}
+
+.logo-link:focus {
+  outline: none;
+  opacity: 0.6;
+}
+
+.logo-link:active {
+  opacity: 0.3;
+}
+
 .page-nav {
   display: flex;
   justify-content: space-between;
@@ -143,6 +156,11 @@ body {
 }
 
 .nav-link:hover {
+  opacity: 0.6;
+}
+
+.nav-link:focus {
+  outline: none;
   opacity: 0.6;
 }
 
@@ -189,6 +207,11 @@ body {
 }
 
 .user-menu-link:hover {
+  opacity: 0.6;
+}
+
+.user-menu-link:focus {
+  outline: none;
   opacity: 0.6;
 }
 
@@ -482,6 +505,7 @@ body {
 
 .subscribe-field {
   border-radius: 4px 0 0 4px;
+  font-weight: 400;
 }
 
 .subscribe-button {
@@ -539,6 +563,11 @@ body {
   fill: #68a2ca;
 }
 
+.social-link:focus .social-icon {
+  fill: #68a2ca;
+  outline: none;
+}
+
 .social-link:active .social-icon {
   fill: #68a2ca;
   opacity: 0.3;
@@ -553,6 +582,11 @@ body {
   color: #756157;
 }
 
+.social-phone:focus {
+  outline: none;
+  color: #756157;
+}
+
 .social-phone:active {
   color: #756157;
   opacity: 0.3;
@@ -563,6 +597,11 @@ body {
 }
 
 .link-logo:hover .social-logo {
+  fill: #756157;
+}
+
+.link-logo:focus .social-logo {
+  outline: none;
   fill: #756157;
 }
 
@@ -979,22 +1018,24 @@ body {
   padding: 18px;
   display: grid;
   width: 340px;
-  grid-template-columns: 1fr 20px 1fr;;
-  grid-template-areas:
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-areas:
     "pic pic pic"
     "tit tit tit"
     "des des des"
     "more . favorit"
-    "star . rat";
+    "star . rat"; */
   align-items: start;
   row-gap: 16px;
+  column-gap: 20px;
   border: 2px solid #e6e6e6;
   box-sizing: border-box;
 }
 
 .hotel-link-pic {
   display: block;
-  grid-area: pic;
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
 }
 
 .hotel-pic {
@@ -1005,7 +1046,7 @@ body {
 }
 
 .hotel-link-text {
-  grid-area: tit;
+  grid-column: 1 / -1;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -1036,19 +1077,17 @@ body {
 }
 
 .hotel-description {
-  grid-area: des;
+  grid-column: 1 / -1;
   display: flex;
   justify-content: space-between;
 }
 
 .button-more {
-  grid-area: more;
   padding: 8px 26px;
   align-self: baseline;
 }
 
 .button-favorit {
-  grid-area: favorit;
   padding: 8px;
   align-self: baseline;
 }
@@ -1072,7 +1111,6 @@ body {
 }
 
 .stars {
-  grid-area: star;
   align-self: end;
   margin: 0;
   height: 37px;
@@ -1103,7 +1141,6 @@ body {
 }
 
 .rating {
-  grid-area: rat;
   align-self: end;
   padding: 8px 22px;
   font-size: 16px;
@@ -1187,7 +1224,6 @@ body {
 .modal-search {
   width: 717px;
   border-radius: 30px;
-  margin-top: 396px;
 }
 
 .modal-close-button {
@@ -1207,7 +1243,7 @@ body {
 
 .modal-close-button:hover,
 .modal-close-button:active {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 .modal-close-button:active::after {
@@ -1215,7 +1251,7 @@ body {
 }
 
 .modal-close-button:focus:not(:active) {
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 
 .modal-title {
