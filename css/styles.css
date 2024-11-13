@@ -1192,6 +1192,11 @@ body {
   box-sizing: border-box;
 }
 
+.pagination-item:first-child .pagination-link {
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
 .pagination-link:not(.link-point) {
   color: #ffffff;
   background-color: #82b3d3;
@@ -1206,9 +1211,17 @@ body {
   outline: none;
 }
 
-.pagination-item:first-child .pagination-link {
-  color: #000000;
-  background-color: #f2f2f2;
+.pagination-link:not(.link-point):active {
+  opacity: 0.6;
+}
+
+.pagination-item:first-child .pagination-link:hover,
+.pagination-item:first-child .pagination-link:focus {
+  background-color: #e6e6e6;
+}
+
+.pagination-item:first-child .pagination-link:active {
+  opacity: 0.6;
 }
 
 .modal-container {
@@ -1312,6 +1325,13 @@ body {
   padding: 12px 20px;
 }
 
+.modal-date-pic {
+  background-image: url("../images/icons/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: 400px 50%;
+  background-size: 16px 15px;
+}
+
 .modal-message {
   grid-column: 2 / -1;
   margin: 0 20px;
@@ -1343,14 +1363,27 @@ body {
 
 .number-button {
   position: relative;
+  padding: 0;
   width: 40px;
   border: none;
   cursor: pointer;
-  padding: 0;
+  background-color: #f2f2f2;
 }
 
-.number-button::before,
-.number-button::after {
+.number-button:hover {
+  background-color: #e6e6e6;
+}
+
+.number-button:focus:not(:active) {
+  outline: 3px solid #83b3d3;
+  z-index: 2;
+}
+
+.number-button:active {
+  opacity: 0.3;
+}
+
+.number-button::before {
   content: "";
   position: absolute;
   top: 24px;
@@ -1369,6 +1402,13 @@ body {
 }
 
 .number-button-plus::after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: 13px;
+  width: 14px;
+  height: 2px;
+  background-color: rgba(117, 97, 87, 0.3);
   transform: rotate(90deg);
 }
 
@@ -1416,6 +1456,10 @@ body {
   bottom: -20px;
 }
 
+.field-info:hover {
+  background-color: #68a2ca;
+}
+
 .field-info:hover .field-info-text {
   display: block;
 }
@@ -1448,7 +1492,7 @@ body {
 
 .modal-form-button {
   grid-column: 1 / -1;
-  margin-top: 25px;
+  margin-top: 20px;
   padding: 18px;
   font-size: 20px;
   line-height: 24px;
