@@ -1347,7 +1347,7 @@ body {
 }
 
 .modal-amount {
-  grid-template-columns: max-content 156px;
+  grid-template-columns: min-content 156px;
 }
 
 .modal-amount + .modal-amount {
@@ -1358,13 +1358,14 @@ body {
   display: grid;
   position: relative;
   width: 110px;
-  grid-template-columns: 40px max-content 40px;
+  grid-template-columns: 36px min-content 36px;
 }
 
 .number-button {
   position: relative;
   padding: 0;
-  width: 40px;
+  width: 36px;
+  height: 48px;
   border: none;
   cursor: pointer;
   background-color: #f2f2f2;
@@ -1413,8 +1414,8 @@ body {
 }
 
 .number-field {
-  padding: 12px 3px;
-  width: 30px;
+  padding: 12px 5px;
+  width: 36px;
   text-align: center;
   border-radius: 0;
   z-index: 1;
