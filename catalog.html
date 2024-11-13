@@ -204,7 +204,7 @@
                 </a>
                 <div class="hotel-description">
                   <span class="description-text">Гостиница</span>
-                  <span class="description-text">От 4000 ₽</span>
+                  <span class="description-text description-text-price">От 4000 ₽</span>
                 </div>
                 <a class="button button-more" href="#">Подробнее</a>
                 <button class="button button-favorit button-secondary" type="button">В избранное</button>
@@ -222,7 +222,7 @@
                 </a>
                 <div class="hotel-description">
                   <span class="description-text">Гостиница</span>
-                  <span class="description-text">От 5000 ₽</span>
+                  <span class="description-text description-text-price">От 5000 ₽</span>
                 </div>
                 <a class="button button-more" href="#">Подробнее</a>
                 <button class="button button-secondary button-favorit button-favorit-active" type="button">В избранном</button>
@@ -240,7 +240,7 @@
                 </a>
                 <div class="hotel-description">
                   <span class="description-text">Гостиница</span>
-                  <span class="description-text">От 2500 ₽</span>
+                  <span class="description-text description-text-price">От 2500 ₽</span>
                 </div>
                 <a class="button button-more" href="#">Подробнее</a>
                 <button class="button button-secondary button-favorit" type="button">В избранное</button>
@@ -258,7 +258,7 @@
                 </a>
                 <div class="hotel-description">
                   <span class="description-text">Гостиница</span>
-                  <span class="description-text">От 1500 ₽</span>
+                  <span class="description-text description-text-price">От 1500 ₽</span>
                 </div>
                 <a class="button button-more" href="#">Подробнее</a>
                 <button class="button button-secondary button-favorit" type="button">В избранное</button>
@@ -299,6 +299,8 @@
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-text">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="user-email">Ваш email</label>
+            <input class="field subscribe-field" type="email" name="user-email" id="user-email" placeholder="Ваш e-mail" required>
             <input class="field subscribe-field" type="email" name="user-email" placeholder="Ваш e-mail" required>
             <button class="button subscribe-button button-secondary" type="submit">Подписаться</button>
           </form>

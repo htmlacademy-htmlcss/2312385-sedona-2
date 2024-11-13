@@ -134,7 +134,8 @@
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-text">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="field subscribe-field" type="email" name="user-email" placeholder="Ваш e-mail" required>
+            <label class="visually-hidden" for="user-email">Ваш email</label>
+            <input class="field subscribe-field" type="email" name="user-email" id="user-email" placeholder="Ваш e-mail" required>
             <button class="button subscribe-button button-secondary" type="submit">Подписаться</button>
           </form>
         </section>
@@ -192,7 +193,7 @@
               </div>
               <div class="modal-group modal-group-date">
                 <label class="modal-field-title" for="date-out">Дата Выезда:</label>
-                <input class="field modal-field" type="text" id="date-out" placeholder="Укажите дату" value="1 сентября 2023" required>
+                <input class="field modal-field modal-date-pic" type="text" id="date-out" placeholder="Укажите дату" value="1 сентября 2023" required>
                 <span class="modal-message">На эти даты есть свободные номера. Пока есть.</span>
               </div>
               <div class="modal-group modal-amount">
